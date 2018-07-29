@@ -4,10 +4,10 @@ class Solution(object):
         :type digits: str
         :rtype: List[str]
         """
-        def combine(old, new):
+        def combine(old, next_digit):
             temp = []
             for i in old:
-                for j in digit_map[new]:
+                for j in digit_map[next_digit]:
                     temp.append(i+j)
             return temp
 
